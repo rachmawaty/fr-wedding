@@ -42,10 +42,10 @@ export default function RSVP() {
           <p className="font-[family-name:var(--font-sans)] text-xs text-[#F8F5F0]/40">
             Questions? Email us at{" "}
             <a
-              href="mailto:rachmawatyy@gmail.com"
+              href="mailto:rachesrach@gmail.com"
               className="text-[#C6A664] hover:underline"
             >
-              rachmawatyy@gmail.com
+              rachesrach@gmail.com
             </a>
           </p>
         </motion.div>

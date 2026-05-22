@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 const faqs = [
   {
     q: "What is the dress code?",
-    a: "Formal Islamic attire. We encourage warm neutral tones, sage, and ivory. Please dress modestly out of respect for the ceremony.",
+    a: "Sopan and appropriate — no strict Islamic dress code, but the Akad Nikah will be held in a mosque so please dress modestly. Warm neutral tones, sage, and ivory are encouraged.",
   },
   {
     q: "Where is parking available?",
@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "Who can I contact for questions?",
-    a: "Please reach out to Rachma at rachmawatyy@gmail.com for any questions or special arrangements.",
+    a: "Please reach out to us at rachesrach@gmail.com for any questions or special arrangements.",
   },
   {
     q: "Can I share photos on social media?",
