@@ -6,29 +6,39 @@ import { useRef } from "react";
 
 const timeline = [
   {
-    year: "2019",
-    title: "Met During Undergrad",
-    body: "Two students, same campus, different paths — until they weren't. What started as a chance encounter turned into something neither expected.",
+    year: "2011",
+    title: "Mentor & Mentee at ITB",
+    body: "They first met at an informatics event at ITB — Rachma was Fauzan's mentor. Neither of them knew it was the beginning of something that would take over a decade to fully unfold.",
   },
   {
-    year: "2020",
-    title: "Became Close Friends",
-    body: "Through late nights, shared ideas, and honest conversations, a friendship deepened into something rare — the kind you don't take for granted.",
+    year: "2011–2022",
+    title: "Ten Years Apart",
+    body: "Life took them in different directions. But Fauzan never quite stopped being curious about where Rachma's path was going. He kept tabs — quietly, persistently.",
   },
   {
     year: "2022",
-    title: "Built Life Together",
-    body: "Across cities, time zones, and seasons, they kept showing up for each other. The distance only made the connection clearer.",
+    title: "Reunited — Boston",
+    body: "When Rachma got accepted to MIT and moved to Boston, they found each other again. The years apart hadn't changed much — except that this time, Fauzan had a plan.",
   },
   {
-    year: "2025",
-    title: "Engagement",
-    body: "A quiet moment, a question, a yes. The kind of yes that doesn't need elaborate planning — just two people and absolute certainty.",
+    year: "2023",
+    title: "Acadia, Almost Romantic",
+    body: "Fauzan had it all figured out: a sunset at Acadia National Park, the perfect moment to ask her out. What he didn't account for was the cold — it was so freezing he could barely think, let alone be romantic. She said yes anyway.",
+  },
+  {
+    year: "2023–2024",
+    title: "Three Months to Be Sure",
+    body: "They gave themselves three months — an honest window to see if they were truly right for each other. They were. A year of dating later, the answer was clear.",
+  },
+  {
+    year: "2024",
+    title: "Engagement Over Zoom",
+    body: "His family traveled from Lampung. Her family waited in Bandung. And over a Zoom call that bridged two cities, he formally asked for her hand. Old tradition, new world — it worked.",
   },
   {
     year: "2026",
     title: "Nikah — June 6",
-    body: "Now they invite the people they love to witness what has been, all along, inevitable.",
+    body: "Now they invite everyone they love to witness what 15 years of crossed paths, one very cold national park, and a Zoom call were quietly leading to.",
   },
 ];
 
@@ -92,8 +102,8 @@ export default function OurStory() {
             Our Story
           </p>
           <h2 className="font-[family-name:var(--font-serif)] text-4xl md:text-5xl font-light text-[#2E2E2E] leading-tight">
-            A friendship that became{" "}
-            <span className="italic text-[#C6A664]">a life</span>
+            Fifteen years in the{" "}
+            <span className="italic text-[#C6A664]">making</span>
           </h2>
         </motion.div>
 
