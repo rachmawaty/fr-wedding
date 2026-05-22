@@ -9,28 +9,25 @@ const events = [
     type: "Akad Nikah",
     emoji: "☽",
     date: "Saturday, June 6, 2026",
-    time: "08:00 — 10:00",
-    location: "To be announced",
+    time: "10:00 — 11:00",
+    location: "ISBCC, Roxbury, Boston",
     note: "Intimate ceremony. Family and close friends.",
   },
   {
-    type: "Reception",
+    type: "Syukuran",
     emoji: "◈",
     date: "Saturday, June 6, 2026",
-    time: "12:00 — 16:00",
-    location: "To be announced",
-    note: "Open to all invited guests.",
+    time: "TBD",
+    location: "Sky Lounge, Boston",
+    note: "A small, warm gathering with family and friends.",
   },
 ];
 
 const schedule = [
-  { time: "08:00", label: "Akad Nikah ceremony begins" },
-  { time: "09:30", label: "Signing & prayers" },
-  { time: "10:30", label: "Family photos" },
-  { time: "12:00", label: "Reception doors open" },
-  { time: "12:30", label: "Welcome & lunch" },
-  { time: "14:00", label: "Program & blessings" },
-  { time: "16:00", label: "Reception closes" },
+  { time: "10:00", label: "Akad Nikah ceremony begins" },
+  { time: "10:30", label: "Signing & prayers" },
+  { time: "11:00", label: "Family photos" },
+  { time: "TBD", label: "Syukuran at Sky Lounge" },
 ];
 
 export default function EventDetails() {

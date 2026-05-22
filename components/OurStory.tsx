@@ -31,12 +31,12 @@ const timeline = [
     body: "He planned the perfect moment — a sunset at Acadia National Park. What he didn't account for was the cold. It was so freezing he could barely think straight, let alone be romantic. She said yes anyway.",
   },
   {
-    year: "2025",
+    year: "May–Aug 2025",
     title: "Three Months to Be Sure",
     body: "They gave themselves three intentional months — an honest window to see if they were truly right for each other. They were.",
   },
   {
-    year: "2025",
+    year: "May 2026",
     title: "Engagement Over Zoom",
     body: "His family traveled from Lampung. Her family waited in Bandung. Over a Zoom call that bridged two cities, he formally asked for her hand. Old tradition, new world — it worked.",
   },
