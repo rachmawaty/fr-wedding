@@ -11,34 +11,39 @@ const timeline = [
     body: "They first met at an informatics event at ITB — Rachma was Fauzan's mentor. Neither of them knew it was the beginning of something that would take over a decade to fully unfold.",
   },
   {
-    year: "2011–2022",
-    title: "Ten Years Apart",
-    body: "Life took them in different directions. But Fauzan never quite stopped being curious about where Rachma's path was going. He kept tabs — quietly, persistently.",
-  },
-  {
-    year: "2022",
-    title: "Reunited — Boston",
-    body: "When Rachma got accepted to MIT and moved to Boston, they found each other again. The years apart hadn't changed much — except that this time, Fauzan had a plan.",
-  },
-  {
-    year: "2023",
-    title: "Acadia, Almost Romantic",
-    body: "Fauzan had it all figured out: a sunset at Acadia National Park, the perfect moment to ask her out. What he didn't account for was the cold — it was so freezing he could barely think, let alone be romantic. She said yes anyway.",
-  },
-  {
-    year: "2023–2024",
-    title: "Three Months to Be Sure",
-    body: "They gave themselves three months — an honest window to see if they were truly right for each other. They were. A year of dating later, the answer was clear.",
+    year: "2011–2024",
+    title: "Over a Decade Apart",
+    body: "Life took them in different directions. But Fauzan never quite stopped being curious about where Rachma's path was going — he kept tabs, quietly and persistently, across all those years.",
   },
   {
     year: "2024",
+    title: "A Message from Daniel",
+    body: "Fauzan had spent four years in Massachusetts and was on his way back to Indonesia when their mutual friend Daniel mentioned it: Rachma got into MIT. He took note.",
+  },
+  {
+    year: "March 2025",
+    title: "She Arrived in Boston",
+    body: "Rachma moved to Boston to begin at MIT. The same city. The same chapter. Fauzan, who had been quietly curious for 13 years, finally made his move.",
+  },
+  {
+    year: "May 2025",
+    title: "Acadia, Almost Romantic",
+    body: "He planned the perfect moment — a sunset at Acadia National Park. What he didn't account for was the cold. It was so freezing he could barely think straight, let alone be romantic. She said yes anyway.",
+  },
+  {
+    year: "2025",
+    title: "Three Months to Be Sure",
+    body: "They gave themselves three intentional months — an honest window to see if they were truly right for each other. They were.",
+  },
+  {
+    year: "2025",
     title: "Engagement Over Zoom",
-    body: "His family traveled from Lampung. Her family waited in Bandung. And over a Zoom call that bridged two cities, he formally asked for her hand. Old tradition, new world — it worked.",
+    body: "His family traveled from Lampung. Her family waited in Bandung. Over a Zoom call that bridged two cities, he formally asked for her hand. Old tradition, new world — it worked.",
   },
   {
     year: "2026",
     title: "Nikah — June 6",
-    body: "Now they invite everyone they love to witness what 15 years of crossed paths, one very cold national park, and a Zoom call were quietly leading to.",
+    body: "Now they invite everyone they love to witness what 15 years, one mutual friend, and one very cold national park were quietly leading to.",
   },
 ];
 
