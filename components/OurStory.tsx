@@ -13,12 +13,12 @@ const timeline = [
   {
     year: "2011–2024",
     title: "Over a Decade Apart",
-    body: "Life took them in different directions. But Fauzan never quite stopped being curious about where Rachma's path was going — he kept tabs, quietly and persistently, across all those years.",
+    body: "Life took them in different directions for over a decade. No particular keeping in touch — just two people living their separate lives.",
   },
   {
-    year: "2024",
+    year: "December 2024",
     title: "A Message from Daniel",
-    body: "Fauzan had spent four years in Massachusetts and was on his way back to Indonesia when their mutual friend Daniel mentioned it: Rachma got into MIT. He took note.",
+    body: "Fauzan had spent four years in Massachusetts and was on his way back to Indonesia when their mutual friend Daniel mentioned it: Rachma got into MIT. That was all it took — he started paying attention.",
   },
   {
     year: "March 2025",
