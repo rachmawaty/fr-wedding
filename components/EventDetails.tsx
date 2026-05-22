@@ -17,7 +17,7 @@ const events = [
     type: "Syukuran",
     emoji: "◈",
     date: "Saturday, June 6, 2026",
-    time: "TBD",
+    time: "12:00 — 14:00",
     location: "Sky Lounge, Boston",
     note: "A small, warm gathering with family and friends.",
   },
@@ -27,7 +27,8 @@ const schedule = [
   { time: "10:00", label: "Akad Nikah ceremony begins" },
   { time: "10:30", label: "Signing & prayers" },
   { time: "11:00", label: "Family photos" },
-  { time: "TBD", label: "Syukuran at Sky Lounge" },
+  { time: "12:00", label: "Syukuran at Sky Lounge begins" },
+  { time: "14:00", label: "Syukuran closes" },
 ];
 
 export default function EventDetails() {
