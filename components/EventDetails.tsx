@@ -27,7 +27,7 @@ const schedule = [
   { time: "10:00", label: "Akad Nikah ceremony begins" },
   { time: "10:30", label: "Signing & prayers" },
   { time: "11:00", label: "Wedding photoshoot" },
-  { time: "12:00", label: "Syukuran at Sky Lounge begins" },
+  { time: "12:00", label: "Syukuran at 345 Harrison Ave begins" },
   { time: "14:00", label: "Syukuran closes" },
 ];
 
