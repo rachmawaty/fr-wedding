@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 const faqs = [
   {
     q: "What is the dress code?",
-    a: "Modest and appropriate — the Akad Nikah will be held in a mosque so please dress modestly. Warm neutral tones, sage, and ivory are encouraged.",
+    a: "Modest and appropriate — the Akad Nikah will be held in a mosque so please dress modestly.",
   },
   {
     q: "Where is parking available?",
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "What are the ceremony timings?",
-    a: "The Akad Nikah begins at 08:00 and the Reception opens at 12:00. Please plan to arrive 15 minutes early.",
+    a: "The Akad Nikah begins at 10:00 and the Syukuran opens at 12:00. Please plan to arrive 15 minutes early.",
   },
   {
     q: "Are children welcome?",

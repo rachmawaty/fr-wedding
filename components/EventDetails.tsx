@@ -123,7 +123,7 @@ export default function EventDetails() {
               Dress Code
             </p>
             <p className="font-[family-name:var(--font-serif)] text-xl text-[#2E2E2E]">
-              Modest and appropriate — the Akad will be held in a mosque. Warm neutrals, sage, and ivory encouraged.
+              Modest and appropriate — the Akad will be held in a mosque.
             </p>
           </div>
         </motion.div>
