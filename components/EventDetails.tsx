@@ -18,7 +18,7 @@ const events = [
     emoji: "◈",
     date: "Saturday, June 6, 2026",
     time: "12:00 — 14:00",
-    location: "Sky Lounge, Boston",
+    location: "345 Harrison Ave, Boston",
     note: "A small, warm gathering with family and friends.",
   },
 ];

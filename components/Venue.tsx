@@ -27,21 +27,23 @@ export default function Venue() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Map placeholder */}
+          {/* Map embed */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="aspect-[4/3] bg-[#DCCFC0]/30 border border-[#DCCFC0] flex items-center justify-center"
+            className="aspect-[4/3] border border-[#DCCFC0] overflow-hidden"
           >
-            <div className="text-center px-8">
-              <p className="font-[family-name:var(--font-serif)] text-2xl italic text-[#2E2E2E]/40 mb-2">
-                Map coming soon
-              </p>
-              <p className="font-[family-name:var(--font-sans)] text-xs text-[#2E2E2E]/30">
-                Venue details will be updated closer to the date
-              </p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.1!2d-71.0648!3d42.3467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a8b8b8b8b8b%3A0x0!2s345+Harrison+Ave%2C+Boston%2C+MA!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="345 Harrison Ave, Boston"
+            />
           </motion.div>
 
           {/* Details */}
@@ -56,11 +58,16 @@ export default function Venue() {
                 Location
               </p>
               <p className="font-[family-name:var(--font-serif)] text-2xl text-[#2E2E2E]">
-                To be announced
+                345 Harrison Ave, Boston
               </p>
-              <p className="font-[family-name:var(--font-sans)] text-sm text-[#2E2E2E]/60 mt-1">
-                Details will be shared with confirmed guests.
-              </p>
+              <a
+                href="https://maps.app.goo.gl/YfcKd4byp5M4Sava7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-[family-name:var(--font-sans)] text-xs text-[#C6A664] mt-1 inline-block hover:underline"
+              >
+                Open in Google Maps →
+              </a>
             </div>
 
             <div className="w-8 h-px bg-[#DCCFC0]" />
