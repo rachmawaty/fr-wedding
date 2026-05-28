@@ -4,11 +4,9 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
-  { label: "Our Story", href: "#story" },
   { label: "Event", href: "#event" },
   { label: "Venue", href: "#venue" },
   { label: "RSVP", href: "#rsvp" },
-  { label: "Gallery", href: "#gallery" },
   { label: "FAQ", href: "#faq" },
 ];
 
