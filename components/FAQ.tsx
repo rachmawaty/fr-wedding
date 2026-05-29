@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "Where is parking available?",
-    a: "Parking details will be shared alongside the venue confirmation. We recommend carpooling if possible.",
+    a: "There is no on-site guest parking. Metered street parking is available nearby, as well as public garages and lots in the area. We highly recommend carpooling or using rideshare services.",
   },
   {
     q: "What are the ceremony timings?",
