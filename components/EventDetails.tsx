@@ -87,29 +87,6 @@ export default function EventDetails() {
           ))}
         </div>
 
-        {/* Schedule */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.5 }}
-        >
-          <h3 className="font-[family-name:var(--font-serif)] text-2xl text-[#2E2E2E] mb-8 italic">
-            Day Schedule
-          </h3>
-          <div className="grid md:grid-cols-2 gap-x-12 gap-y-4">
-            {schedule.map((s) => (
-              <div key={s.time} className="flex items-baseline gap-4">
-                <span className="font-[family-name:var(--font-sans)] text-xs tracking-wider text-[#C6A664] w-12 flex-shrink-0">
-                  {s.time}
-                </span>
-                <span className="font-[family-name:var(--font-sans)] text-sm text-[#2E2E2E]/70">
-                  {s.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
         {/* Dress code */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

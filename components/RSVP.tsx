@@ -75,13 +75,6 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
         <p className="font-[family-name:var(--font-serif)] text-xl text-[#F8F5F0]/70 italic">
           {subtitle}
         </p>
-        {capacity !== null && (
-          <p className="font-[family-name:var(--font-sans)] text-xs text-[#F8F5F0]/40 mt-2">
-            {capacity.remaining > 0
-              ? `${capacity.remaining} of ${capacity.limit} spots remaining`
-              : "No spots remaining"}
-          </p>
-        )}
       </div>
 
       {status === "success" ? (
