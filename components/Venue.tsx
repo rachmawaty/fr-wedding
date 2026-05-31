@@ -8,10 +8,10 @@ const venues = [
   {
     label: "Akad Nikah",
     name: "ISBCC, Roxbury",
-    address: "100 Malcolm X Blvd, Boston, MA 02119",
+    address: "100 Malcolm X Blvd, Roxbury, MA 02120",
     time: "10:00 — 11:00",
-    mapsUrl: "https://maps.app.goo.gl/isbcc",
-    embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.5!2d-71.0875!3d42.3290!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37960d44cde25%3A0x9d9cde48da3b7b1f!2sISBCC!5e0!3m2!1sen!2sus!4v1",
+    mapsUrl: "https://maps.app.goo.gl/FdvuwM8oG5qe7heL9",
+    embed: "https://maps.google.com/maps?q=100+Malcolm+X+Blvd,+Roxbury,+MA+02120&output=embed",
   },
   {
     label: "Syukuran",
