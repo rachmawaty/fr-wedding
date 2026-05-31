@@ -90,12 +90,6 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
           <p className="font-[family-name:var(--font-serif)] text-xl italic text-[#F8F5F0]/50">
             We've reached capacity for this event.
           </p>
-          <p className="font-[family-name:var(--font-sans)] text-xs text-[#F8F5F0]/30 mt-2">
-            Please reach out at{" "}
-            <a href="mailto:rachesrach@gmail.com" className="text-[#C6A664] hover:underline">
-              rachesrach@gmail.com
-            </a>
-          </p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">

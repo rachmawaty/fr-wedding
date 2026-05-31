@@ -8,6 +8,7 @@ const links = [
   { label: "Venue", href: "#venue" },
   { label: "RSVP", href: "#rsvp" },
   { label: "FAQ", href: "#faq" },
+  { label: "Wishes", href: "#wishes" },
 ];
 
 export default function Navbar() {

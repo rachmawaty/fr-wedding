@@ -38,17 +38,6 @@ export default function Footer() {
           May Allah bless you both and join you together in goodness.
         </p>
 
-        {/* Contact */}
-        <p className="font-[family-name:var(--font-sans)] text-xs text-[#F8F5F0]/30">
-          Questions?{" "}
-          <a
-            href="mailto:rachesrach@gmail.com"
-            className="text-[#C6A664] hover:underline"
-          >
-            rachesrach@gmail.com
-          </a>
-        </p>
-
         {/* Bottom */}
         <div className="mt-12 pt-6 border-t border-[#F8F5F0]/10">
           <p className="font-[family-name:var(--font-sans)] text-[10px] text-[#F8F5F0]/20 tracking-widest uppercase">
