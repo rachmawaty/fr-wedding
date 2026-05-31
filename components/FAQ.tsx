@@ -17,18 +17,6 @@ const faqs = [
     q: "What are the ceremony timings?",
     a: "The Akad Nikah begins at 10:00 and the Syukuran opens at 12:00. Please plan to arrive 15 minutes early.",
   },
-  {
-    q: "Are children welcome?",
-    a: "Children are welcome at the Reception. For the Akad Nikah, we kindly ask that only family and close friends attend.",
-  },
-  {
-    q: "Who can I contact for questions?",
-    a: "Please reach out to us at rachesrach@gmail.com for any questions or special arrangements.",
-  },
-  {
-    q: "Can I share photos on social media?",
-    a: "Yes! We'd love for you to share the joy. Use our wedding tag (to be announced) so we can find your photos.",
-  },
 ];
 
 function FAQItem({ item, index }: { item: (typeof faqs)[0]; index: number }) {
