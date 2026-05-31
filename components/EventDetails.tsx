@@ -19,7 +19,7 @@ const events = [
     date: "Saturday, June 6, 2026",
     time: "12:00 — 14:00",
     location: "345 Harrison Ave, Boston",
-    note: "A small, warm gathering with family and friends.",
+    note: "A small, warm gathering with family and friends. We'll be serving Indonesian food.",
   },
 ];
 
