@@ -1,10 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Pool } from "pg";
+import { Resend } from "resend";
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: false,
 });
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const LIMITS: Record<string, number> = {
   akad: 8,
@@ -39,6 +42,24 @@ export async function POST(req: NextRequest) {
       "INSERT INTO rsvp (event, name, email, guests, dietary, message) VALUES ($1, $2, $3, $4, $5, $6)",
       [event, name.trim(), email.trim().toLowerCase(), incoming, dietary ?? null, message ?? null]
     );
+
+    const eventLabel = event === "akad" ? "Akad Nikah" : "Syukuran";
+    const guestLabel = incoming === 1 ? "1 person" : `${incoming} people`;
+
+    resend.emails.send({
+      from: "wedding@fauzan.rach.es",
+      to: "rachesrach@gmail.com",
+      subject: `New RSVP — ${eventLabel}`,
+      html: `
+        <p><strong>${name}</strong> just RSVPed for <strong>${eventLabel}</strong>.</p>
+        <ul>
+          <li>Email: ${email}</li>
+          <li>Attending: ${guestLabel}</li>
+          ${message ? `<li>Message: ${message}</li>` : ""}
+        </ul>
+        <p>Spots remaining: ${limit - current - incoming}</p>
+      `,
+    }).catch(() => {});
 
     return NextResponse.json({ ok: true, spots_remaining: limit - current - incoming });
   } finally {
