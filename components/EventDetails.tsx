@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 const events = [
   {
-    type: "Akad Nikah",
+    type: "Akad Nikah (Religious Ceremony)",
     emoji: "☽",
     date: "Saturday, June 6, 2026",
     time: "10:00 — 11:00",
@@ -14,7 +14,7 @@ const events = [
     note: "Intimate ceremony. Family and close friends.",
   },
   {
-    type: "Syukuran",
+    type: "Syukuran (Small Feast/Gathering)",
     emoji: "◈",
     date: "Saturday, June 6, 2026",
     time: "12:00 — 14:00",

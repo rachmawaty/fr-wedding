@@ -22,7 +22,6 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [guests, setGuests] = useState(1);
-  const [dietary, setDietary] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -43,7 +42,7 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
     const res = await fetch("/api/rsvp", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ event, name, email, guests, dietary, message }),
+      body: JSON.stringify({ event, name, email, guests, message }),
     });
 
     const data = await res.json();
@@ -151,18 +150,6 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
               </div>
             </div>
           )}
-
-          <div>
-            <label className="font-[family-name:var(--font-sans)] text-[10px] tracking-[0.15em] uppercase text-[#F8F5F0]/40 block mb-1.5">
-              Dietary Restrictions
-            </label>
-            <input
-              value={dietary}
-              onChange={(e) => setDietary(e.target.value)}
-              placeholder="Vegetarian, halal, allergies, etc."
-              className="w-full bg-[#F8F5F0]/5 border border-[#F8F5F0]/10 px-4 py-2.5 text-sm text-[#F8F5F0] placeholder-[#F8F5F0]/20 focus:outline-none focus:border-[#C6A664]/50 transition-colors"
-            />
-          </div>
 
           <div>
             <label className="font-[family-name:var(--font-sans)] text-[10px] tracking-[0.15em] uppercase text-[#F8F5F0]/40 block mb-1.5">
