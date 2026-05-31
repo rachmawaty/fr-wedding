@@ -227,17 +227,6 @@ export default function RSVP() {
           />
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-[family-name:var(--font-sans)] text-xs text-center text-[#F8F5F0]/30 mt-10"
-        >
-          Questions?{" "}
-          <a href="mailto:rachesrach@gmail.com" className="text-[#C6A664] hover:underline">
-            rachesrach@gmail.com
-          </a>
-        </motion.p>
       </div>
     </section>
   );
