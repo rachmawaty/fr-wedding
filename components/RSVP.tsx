@@ -227,16 +227,16 @@ export default function RSVP() {
           className="grid md:grid-cols-2 gap-6"
         >
           <RSVPForm
-            event="akad"
-            title="Akad Nikah"
-            subtitle="June 6 · ISBCC, Roxbury · 10:00–11:00"
-            maxGuests={1}
-          />
-          <RSVPForm
             event="syukuran"
             title="Syukuran"
             subtitle="June 6 · 345 Harrison Ave · 12:00–14:00"
             maxGuests={2}
+          />
+          <RSVPForm
+            event="akad"
+            title="Akad Nikah"
+            subtitle="June 6 · ISBCC, Roxbury · 10:00–11:00"
+            maxGuests={1}
           />
         </motion.div>
 
