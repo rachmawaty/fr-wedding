@@ -196,7 +196,7 @@ export default function RSVP() {
             Will you join <span className="italic text-[#C6A664]">us?</span>
           </h2>
           <p className="font-[family-name:var(--font-sans)] text-sm text-[#F8F5F0]/60 leading-relaxed max-w-md mx-auto">
-            Please RSVP by June 3, 2026. Select the event you'll be attending below.
+            Select the event you'll be attending below.
           </p>
           <div className="w-8 h-px bg-[#C6A664] mx-auto mt-8" />
         </motion.div>

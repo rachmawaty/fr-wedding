@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-const events = [
+const events: { type: string; emoji: string; date: string; time: string; location: string; note: string; guide: string }[] = [
   {
     type: "Akad Nikah (Religious Ceremony)",
     emoji: "☽",
@@ -12,6 +12,7 @@ const events = [
     time: "10:00 — 11:00",
     location: "ISBCC, Roxbury, Boston",
     note: "Intimate ceremony. Family and close friends.",
+    guide: "Ask for the Musalla upon arrival.",
   },
   {
     type: "Syukuran (Small Feast/Gathering)",
@@ -20,6 +21,7 @@ const events = [
     time: "12:00 — 14:00",
     location: "345 Harrison Ave, Boston",
     note: "A small, warm gathering with family and friends. We'll be serving Indonesian food.",
+    guide: "Head to the Rooftop Lounge on Level 14.",
   },
 ];
 
@@ -78,9 +80,12 @@ export default function EventDetails() {
                   {e.location}
                 </p>
               </div>
-              <div className="mt-6 pt-6 border-t border-[#DCCFC0]">
+              <div className="mt-6 pt-6 border-t border-[#DCCFC0] space-y-2">
                 <p className="font-[family-name:var(--font-sans)] text-xs italic text-[#2E2E2E]/50">
                   {e.note}
+                </p>
+                <p className="font-[family-name:var(--font-sans)] text-xs text-[#C6A664]">
+                  {e.guide}
                 </p>
               </div>
             </motion.div>
