@@ -7,7 +7,6 @@ const pool = new Pool({
   ssl: false,
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 const LIMITS: Record<string, number> = {
   akad: 8,
@@ -43,6 +42,7 @@ export async function POST(req: NextRequest) {
       [event, name.trim(), email.trim().toLowerCase(), incoming, dietary ?? null, message ?? null]
     );
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const eventLabel = event === "akad" ? "Akad Nikah" : "Syukuran";
     const guestLabel = incoming === 1 ? "1 person" : `${incoming} people`;
 
