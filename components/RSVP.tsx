@@ -217,7 +217,7 @@ export default function RSVP() {
             event="akad"
             title="Akad Nikah"
             subtitle="June 6 · ISBCC, Roxbury · 10:00–11:00"
-            maxGuests={2}
+            maxGuests={1}
           />
         </motion.div>
 

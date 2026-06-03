@@ -9,7 +9,7 @@ const pool = new Pool({
 
 
 const LIMITS: Record<string, number> = {
-  akad: 16,
+  akad: 8,
   syukuran: 20,
 };
 
