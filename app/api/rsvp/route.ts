@@ -10,7 +10,7 @@ const pool = new Pool({
 
 const LIMITS: Record<string, number> = {
   akad: 8,
-  syukuran: 20,
+  syukuran: 9999,
 };
 
 export async function POST(req: NextRequest) {
