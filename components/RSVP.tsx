@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 
 type Event = "akad" | "syukuran";
-type Status = "idle" | "loading" | "success" | "error" | "full";
+type Status = "idle" | "loading" | "success" | "error" | "full" | "duplicate";
 
 interface Capacity {
   total: number;
@@ -48,7 +48,10 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
     const data = await res.json();
 
     if (!res.ok) {
-      if (res.status === 409) {
+      if (res.status === 409 && data.error === "duplicate") {
+        setStatus("duplicate");
+        setErrorMsg(data.message);
+      } else if (res.status === 409) {
         setStatus("full");
         setErrorMsg(data.error);
       } else {
@@ -83,6 +86,15 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
           </p>
           <p className="font-[family-name:var(--font-sans)] text-xs text-[#F8F5F0]/50">
             We'll be in touch closer to the day. Thank you, {name.split(" ")[0]}.
+          </p>
+        </div>
+      ) : status === "duplicate" ? (
+        <div className="text-center py-6">
+          <p className="font-[family-name:var(--font-serif)] text-xl italic text-[#C6A664] mb-2">
+            You're already on the list!
+          </p>
+          <p className="font-[family-name:var(--font-sans)] text-xs text-[#F8F5F0]/50">
+            {errorMsg}
           </p>
         </div>
       ) : isFull ? (

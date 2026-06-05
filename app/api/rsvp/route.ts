@@ -23,6 +23,16 @@ export async function POST(req: NextRequest) {
 
   const client = await pool.connect();
   try {
+    const { rows: existing } = await client.query(
+      "SELECT id FROM rsvp WHERE event = $1 AND email = $2",
+      [event, email.trim().toLowerCase()]
+    );
+    if (existing.length > 0)
+      return NextResponse.json(
+        { error: "duplicate", message: `You've already RSVPed for the ${event === "akad" ? "Akad Nikah" : "Syukuran"}. We have you on the list!` },
+        { status: 409 }
+      );
+
     const { rows } = await client.query(
       "SELECT COALESCE(SUM(guests), 0) AS total FROM rsvp WHERE event = $1",
       [event]
