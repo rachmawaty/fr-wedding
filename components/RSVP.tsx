@@ -23,6 +23,7 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
   const [email, setEmail] = useState("");
   const [guests, setGuests] = useState(1);
   const [message, setMessage] = useState("");
+  const [submittedName, setSubmittedName] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [capacity, setCapacity] = useState<Capacity | null>(null);
@@ -61,6 +62,7 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
       return;
     }
 
+    setSubmittedName(name.split(" ")[0]);
     setStatus("success");
     setCapacity((prev) => prev ? { ...prev, total: prev.total + guests, remaining: prev.remaining - guests } : null);
   };
@@ -80,12 +82,13 @@ function RSVPForm({ event, title, subtitle, maxGuests }: {
       </div>
 
       {status === "success" ? (
-        <div className="text-center py-6">
+        <div className="text-center py-8">
+          <p className="text-3xl mb-4">🎉</p>
           <p className="font-[family-name:var(--font-serif)] text-2xl italic text-[#C6A664] mb-2">
-            You're on the list.
+            You're on the list, {submittedName}!
           </p>
-          <p className="font-[family-name:var(--font-sans)] text-xs text-[#F8F5F0]/50">
-            We'll be in touch closer to the day. Thank you, {name.split(" ")[0]}.
+          <p className="font-[family-name:var(--font-sans)] text-xs text-[#F8F5F0]/60 leading-relaxed">
+            Your RSVP has been confirmed. We can't wait to celebrate with you on June 6!
           </p>
         </div>
       ) : status === "duplicate" ? (
